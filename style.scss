@@ -1,3 +1,113 @@
+@import "ress";
+
+html {
+  font-size: 62.5%;
+}
 body {
-  background-color: tomato;
+  //   margin-top: 150px;
+  //   padding: -100px 0;
+  background-color: #08080a;
+  color: #fff;
+}
+
+.circle {
+  height: 5px;
+  width: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  //   margin: 12px;
+  margin: 12px auto;
+}
+
+.header {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 1;
+  background: #000;
+  box-shadow: 7px 0 30px #fff;
+  &__logo {
+    margin-top: 30px;
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    height: 100%;
+    width: 200px;
+    list-style: none;
+    // cursor: pointer;ここ効いてない
+  }
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+  }
+}
+.main {
+  background: repeat url(./img/background_img.svg);
+  background-size: 65%;
+  background-attachment: fixed;
+  .farstview {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #08080a;
+
+    img {
+      height: 60%;
+      width: 60%;
+    }
+  }
+  .spotloght {
+    // height: 500px;
+    // width: 100vw;
+    margin: 0 auto;
+    &__title {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    &__text {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    &__music {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+    &__music-title {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    &__music-text {
+      text-align: center;
+      margin-bottom: 350px;
+    }
+  }
+  .popular {
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    &__item {
+      margin: 20px;
+      list-style: none;
+      //   background-color: #08080a;
+    }
+    &__title {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    &__text {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  }
 }
