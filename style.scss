@@ -58,10 +58,11 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #08080a;
+    margin-bottom: 100px;
 
     img {
-      height: 60%;
-      width: 60%;
+      height: 100%;
+      width: 100%;
     }
   }
   .spotloght {
@@ -110,4 +111,57 @@ body {
       font-size: 1.5rem;
     }
   }
+  .rapper-list {
+    &__title {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    &__text {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    &__item {
+      margin: 50px 70px;
+      //   display: flex;
+    }
+    &__items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    &__link {
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      font-size: 2rem;
+
+      img {
+        height: 230px;
+        width: 230px;
+      }
+    }
+  }
+  .explanation {
+    margin: 100px;
+    &__title {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    &__text {
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+}
+.footer {
+  height: 80px;
+  width: 100%;
+  background: #242424;
+  text-align: center;
+  line-height: 80px;
+  font-size: 1.5rem;
 }
